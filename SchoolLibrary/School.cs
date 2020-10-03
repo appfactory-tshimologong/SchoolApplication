@@ -55,7 +55,7 @@ namespace SchoolLibrary
         {
             get { return _twitterAddress; }
 
-            set 
+            set
             {
                 if (value.StartsWith("@"))
                 {
