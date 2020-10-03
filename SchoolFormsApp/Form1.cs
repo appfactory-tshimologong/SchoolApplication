@@ -40,6 +40,23 @@ namespace SchoolFormsApp
 
             MessageBox.Show(testSchool.ToString());
 
+            //var student = new Student();
+
+            //student.GradeLevel = Student.GradeLevels.Freshman;
+        }
+
+        private void btnTestTeacher_Click(object sender, EventArgs e)
+        {
+            var teacher = new Teacher();
+            var gp = teacher.GradePointAverage();
+            MessageBox.Show("The Class Grade Average is " + gp);
+        }
+
+        private void btnTestStudent_Click(object sender, EventArgs e)
+        {
+            var student = new Student();
+            var gp = student.GradePointAverage();
+            MessageBox.Show("Your student Grade Average is " + gp);
         }
     }
 }
